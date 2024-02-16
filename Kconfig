@@ -255,4 +255,10 @@ menu "LittleFS"
         help
             Selects whether littlefs performs runtime assert checks.
 
+    config LITTLEFS_THREAD_SAFE
+        bool "Enable thread safety"
+        default "n"
+        help
+            Toggle thread safety support for public API functions
+
 endmenu
